@@ -196,7 +196,7 @@ const DashboardPage = () => {
       {/* Header (Barra de Navegação) */}
       <header className="bg-white shadow-md">
         <nav className="container mx-auto flex max-w-4xl items-center justify-between p-4">
-          <h1 className="text-2xl font-bold text-blue-600">Minhas Tarefas</h1>
+          <h1 className="text-2xl font-bold text-blue-600">Minha Lista de Tarefas</h1>
           <button
             onClick={logout}
             className="rounded bg-red-500 px-4 py-2 font-medium text-white hover:bg-red-600"

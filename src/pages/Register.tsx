@@ -70,7 +70,13 @@ const RegisterPage = () => {
   // 10. O JSX (HTML com Tailwind)
   // Este layout já é "mobile-first" e responsivo (30% da nota)
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100 p-4">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-gray-100 p-4">
+
+      {/* NOVO TÍTULO ADICIONADO AQUI */}
+      <h1 className="mb-8 text-center text-4xl font-bold text-gray-800">
+        Minha Lista de Tarefas
+      </h1>
+
       <div className="w-full max-w-md rounded-lg bg-white p-8 shadow-md">
         
         <h2 className="mb-6 text-center text-3xl font-bold text-gray-900">
@@ -148,7 +154,7 @@ const RegisterPage = () => {
               disabled={isLoading}
               className="w-full rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:bg-gray-400"
             >
-              {isLoading ? 'A criar...' : 'Registar'}
+              {isLoading ? 'A criar...' : 'Registrar'}
             </button>
           </div>
         </form>

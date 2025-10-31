@@ -70,7 +70,13 @@ const LoginPage = () => {
 
   // 11. O JSX (HTML com Tailwind) - muito similar ao Registo
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100 p-4">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-gray-100 p-4">
+      
+      {/* NOVO TÍTULO ADICIONADO AQUI */}
+      <h1 className="mb-8 text-center text-4xl font-bold text-gray-800">
+        Minha Lista de Tarefas
+      </h1>
+
       <div className="w-full max-w-md rounded-lg bg-white p-8 shadow-md">
         
         <h2 className="mb-6 text-center text-3xl font-bold text-gray-900">
