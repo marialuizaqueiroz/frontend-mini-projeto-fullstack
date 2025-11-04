@@ -66,7 +66,7 @@ const DashboardPage = () => {
 
     try {
         // Usamos o nosso novo "ajudante"
-        const data: Task[] = await apiFetch('/tasks', { method: 'GET' });
+        const data: Task[] = await apiFetch('/api/tasks', { method: 'GET' });
         setTasks(data);
     } catch (error: any) {
         // A apiFetch já tratou o 401, então só mostramos outros erros
@@ -93,7 +93,7 @@ const DashboardPage = () => {
     const loadingToastId = toast.loading('A criar tarefa...');
     try {
         // Usamos o nosso novo "ajudante"
-        await apiFetch('/tasks', {
+        await apiFetch('/api/tasks', {
             method: 'POST',
             body: JSON.stringify({
                 title: newTaskTitle,
@@ -124,7 +124,7 @@ const DashboardPage = () => {
     const loadingToastId = toast.loading('A apagar tarefa...');
     try {
         // Usamos o nosso novo "ajudante"
-        await apiFetch(`/tasks/${taskId}`, {
+        await apiFetch(`/api/tasks/${taskId}`, {
             method: 'DELETE',
         });
         
@@ -145,7 +145,7 @@ const DashboardPage = () => {
     const loadingToastId = toast.loading('A atualizar tarefa...');
     try {
         // Usamos o nosso novo "ajudante"
-        await apiFetch(`/tasks/${task.id}`, {
+        await apiFetch(`/api/tasks/${task.id}`, {
             method: 'PATCH',
             body: JSON.stringify({
                 completed: !task.completed,
@@ -169,7 +169,7 @@ const DashboardPage = () => {
   ) => {
     const loadingToastId = toast.loading('A atualizar tarefa...');
     try {
-      await apiFetch(`/tasks/${taskId}`, {
+      await apiFetch(`/api/tasks/${taskId}`, {
         method: 'PATCH', // Usamos PATCH para atualização parcial (é mais seguro que PUT)
         body: JSON.stringify(data),
       });

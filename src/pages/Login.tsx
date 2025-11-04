@@ -28,7 +28,7 @@ const LoginPage = () => {
 
     try {
       // 6. Fazer a chamada FETCH para o /login
-      const response = await fetch(`${API_URL}/login`, {
+      const response = await fetch(`${API_URL}/api/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

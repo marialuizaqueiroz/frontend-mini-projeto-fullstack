@@ -29,7 +29,7 @@ const RegisterPage = () => {
 
     try {
       // 6. Fazer a chamada FETCH para o nosso backend
-      const response = await fetch(`${API_URL}/register`, {
+      const response = await fetch(`${API_URL}/api/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
