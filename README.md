@@ -6,10 +6,6 @@ A aplicação é uma SPA (Single Page Application) construída em **React** que 
 
 ---
 
-## 🚀 Links de Avaliação (Entregáveis)
-
-Aqui estão todos os links necessários para a avaliação, conforme solicitado na tarefa.
-
 ### 1. Vídeo de Demonstração (Até 3 min)
 
 O vídeo abaixo demonstra todas as funcionalidades obrigatórias da aplicação, incluindo testes locais e em produção, fluxos de autenticação, feedbacks de erro/sucesso e o logout.
